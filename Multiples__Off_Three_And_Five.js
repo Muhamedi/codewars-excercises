@@ -1,14 +1,18 @@
 /* 
    Language - Javascript
-   Date solved - 09/01/2023
+   Date solved - 08/01/2023
+
  - Problem description
-   The goal of this exercise is to convert a string to a new string where each character in the new string
-   is "(" if that character appears only once in the original string, or ")" if that character appears more 
-   than once in the original string. Ignore capitalization when determining if a character is a duplicate. 
+   If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
+   The sum of these multiples is 23.
+   Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in. 
+   Additionally, if the number is negative, return 0 (for languages that do have them).
+   Note: If the number is a multiple of both 3 and 5, only count it once. 
+
  - Solution 1
- - Time Complexity O(n)
- - Explanation: Iterate and keep count of each character occurrence and then iterate and based
-   on character occurrence frequency construct the string with the correct parentheses
+ - Time Complexity O(n) where n is the input number
+ - Explanation: Check if the number multiplies with 3 and 5, with only three or only five to avoid counting 
+   more than once if it multiplies by both
  */
 
 function solution(number){
